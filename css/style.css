@@ -12,9 +12,24 @@ html {
     color: #fff;
 }
 
-header {
-    background: url(../img/main1.png) left center /cover;
+.l_header {
+    display: block;
+    background-image: url(../img/main.png);
+    background-size: cover;
+    width: 100%;
     height: 100vh;
+}
+
+.l_header::after {
+    content: "";
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(219,219,219,1) 80%);
+    z-index: 500;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom:-50px;
+    left: 0;
 }
 
 h1 img {
@@ -24,12 +39,9 @@ h1 img {
     top: 45%;
 }
 
-nav {
+.l_header__nav {
     display: none;
 }
-
-
-
 
 @media screen and (min-width: 768px) {
     h1 img {
@@ -38,20 +50,21 @@ nav {
         right: 0;
     }
 
-    nav {
+    .l_header__nav {
         display: flex;
         justify-content: space-between;
-        column-gap: 30 px;
+        column-gap: 30px;
         width: 90%;
         margin: 0 auto;
+
     }
 
-    nav img {
+    .logoIcon {
         width: 12vw;
         min-width: 150px;
+        height: auto;
         padding: 30px;
         z-index: 100;
-
     }
 
     ul {
@@ -60,13 +73,10 @@ nav {
         align-items: center;
         font-size: 16px;
         column-gap: 70px;
+        z-index: 100;
     }
 
-    li a {
-        /* padding: 50px; */
-    }
-
-    li a:hover{
+    li a:hover {
         border-bottom: 1px solid #fff;
     }
 }
@@ -155,7 +165,6 @@ section:nth-of-type(n+3) .main-container {
 .first-contact {
     background: rgb(225, 225, 225);
     background: linear-gradient(180deg, rgba(225, 225, 225, 1) 0%, rgba(89, 123, 134, 1) 64%);
-    ;
 }
 
 .tool {
