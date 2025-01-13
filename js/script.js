@@ -16,3 +16,18 @@ jQuery(function($) {
       });
     });
     })
+
+
+const navBtn = document.getElementById('is-navOpen');
+const navItem = document.querySelectorAll('.l_header__navItem');
+
+
+navBtn.addEventListener('click', () => {
+    document.body.classList.toggle('is-nav-open');
+});
+
+navItem.forEach(item => {
+    item.addEventListener('click', () => {
+        document.body.classList.remove('is-nav-open');
+    })
+})
