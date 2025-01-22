@@ -367,7 +367,7 @@ section:nth-of-type(n+3) .main-container {
     bottom: 0;
     right: 0;
     display: block;
-    z-index: 10;
+    z-index: 1000;
 }
 
 
@@ -460,3 +460,91 @@ footer {
         opacity: 0;
     }
 }
+
+.fixed_bottom{
+    background-image: url(../img/yama.png);
+    width: 34%;
+    height: 9vw;
+    background-size: cover;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 500;
+}
+
+.scroll_moving{
+    background-image: url(../img/moving.png);
+    width: 5%;
+    height: 3vw;
+    background-size: contain;
+    position: fixed;
+    background-repeat: no-repeat;
+    bottom:0;
+    left: 34%;
+    z-index: 1000;
+    transition: bottom 0.5s ease-out, left 0.5s ease-out;
+    transform: rotate(0deg);
+}
+
+@media screen and (max-width: 768px) and ( min-width: 481px) {
+
+    .fixed_bottom{
+        width: 62%;
+        height: 12vh;
+        bottom: 0;
+
+    }
+    .scroll_moving{
+        width: 8%;
+        height: 5vh;
+        bottom:0;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .fixed_bottom{
+        width: 60%;
+        height: 10vh;
+        bottom: 0;
+
+    }
+    .scroll_moving{
+        width: 8%;
+        height: 5vh;
+        bottom:0;
+        left: 5%;
+    }
+}
+/* @keyframes moveCircle {
+    0% {
+        bottom:0;
+        left: 33%;
+    }
+    
+    12% {
+        bottom:4.7%;
+        left: 38%;
+    }
+
+    20% {
+        bottom:5.3%;
+        left: 41%;
+    }
+
+    36% {
+        bottom:11%;
+        left: 46%;
+    }
+
+    55% {
+        bottom:13%;
+        left: 53%;
+    }
+    100% {
+        left: 66%;
+        bottom: 0%;
+    }
+} */
