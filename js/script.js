@@ -179,7 +179,8 @@ function updateCirclePosition() {
       { bottom: '10%', left: '54%', rotate: '45deg' },
       { bottom: '4%', left: '58%', rotate: '45deg' },
       { bottom: '0%', left: '61%', rotate: '45deg' },
-      { bottom: '-1%', left: '65%', rotate: '15deg' }
+      { bottom: '-1%', left: '65%', rotate: '15deg' },
+      { bottom: '-1%', left: '67%', rotate: '15deg' }
   ];
 
   // Adjust keyframes for different screen sizes
@@ -193,7 +194,8 @@ function updateCirclePosition() {
           { bottom: '8%', left: '50%', rotate: '20deg' },
           { bottom: '7%', left: '56%', rotate: '45deg' },
           { bottom: '0%', left: '72%', rotate: '45deg' },
-          { bottom: '-1%', left: '79%', rotate: '15deg' }
+          { bottom: '-1%', left: '79%', rotate: '15deg' },
+          { bottom: '-1%', left: '80%', rotate: '15deg' }
       ];
   } else if (window.innerWidth <= 480) {
       keyframes = [
@@ -205,6 +207,7 @@ function updateCirclePosition() {
         { bottom: '7%', left: '50%', rotate: '20deg' },
         { bottom: '6%', left: '54%', rotate: '45deg' },
         { bottom: '0%', left: '72%', rotate: '45deg' },
+        { bottom: '-1%', left: '80%', rotate: '15deg' },
         { bottom: '-1%', left: '79%', rotate: '15deg' }
       ];
   }
