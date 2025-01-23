@@ -32,26 +32,6 @@ navItem.forEach(item => {
   })
 })
 
-
-
-
-// window.addEventListener('scroll', function() {
-//   var footprint = document.querySelector('.footprint');
-//   var scrollPosition = window.scrollY;
-//   var viewportHeight = window.innerHeight;
-//   var maxScroll = document.documentElement.scrollHeight - viewportHeight;
-
-//   // 足跡の移動速度を設定
-//   var speedFactor = 0.2; // 0.5倍速で動かす
-
-//   if (scrollPosition >= maxScroll) {
-//       footprint.style.transform = 'translateY(' + (maxScroll * speedFactor) + 'px)';
-//   } else {
-//       footprint.style.transform = 'translateY(' + (scrollPosition * speedFactor) + 'px)';
-//   }
-// });
-
-
 //左足
 window.addEventListener('scroll', function () {
   var scrollPosition = window.scrollY;
